@@ -3,11 +3,12 @@
   <h1><strong><%= @pelicula.titulo %></strong></h1>
 </div>
 
-<dl class="dl-horizontal">
-  <dt><strong><%= model_class.human_attribute_name(:descripcion) %>:</strong></dt>
-  <dd><%= @pelicula.descripcion %></dd>
-  <dd><%= raw @pelicula.iframe %></dd>
-  <%= link_to "Inicio", root_path %>
-</dl>
+<div class="payload">
+  <ul class="items">
+    <li><%= @pelicula.descripcion %></li>
+    <li><%= raw @pelicula.iframe %></li>
+    <%= link_to "Inicio", root_path %>
+  </ul>
+</div>
 
 

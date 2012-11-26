@@ -1,14 +1,16 @@
 <%- model_class = Pelicula -%>
 <div class="page-header">
-  <h1>PelisBox</h1>
+  <h1 id="pelisbox">PelisBox</h1>
 </div>
 <div class="container">
+  <div class="row">
     <% @peliculas.each do |pelicula| %>
-    <div class="span3">
-      <ul id="pelicula">
-        <li><h3><%= link_to "#{pelicula.titulo}", pelicula_path(pelicula) %></h3></li>
-        <li ><%= raw pelicula.imagen %></li>
-      </ul>
-    </div>
-    <% end %>
+      <div class="span3">
+        <ul id="pelicula">
+          <li><h3><%= link_to "#{pelicula.titulo}", pelicula_path(pelicula) %></h3></li>
+          <li ><%= raw pelicula.imagen %></li>
+        </ul>
+      </div>
+      <% end %>
+  </div>
 </div>

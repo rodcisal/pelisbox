@@ -4,6 +4,12 @@
 
 
 
+body {
+	background: #1B1B24;
+	color: #7A7A8A;
+	font-family: "proxima-nova", "helvetica neue", helvetica, arial, geneva, sans-serif;
+}
+
 img#imagenes 
 	 { 
 	max-width: 300px;
@@ -13,4 +19,23 @@ img#imagenes
 
 ul#pelicula {
 	list-style-type:none;
+	width: 210px;
+	background: #464368;
+	color: white;
+	li h3 a { color:white; text-align:center;}
+}
+
+
+.items {
+	list-style-type:none;
+	border: 1px solid;
+	width: 738px;
+	background: #2479A2;
+}
+
+#pelisbox {
+	font-family: 'Condiment', cursive;
+	color:white;
+	font-size: 50px;
+	margin-left: 40px;
 }
