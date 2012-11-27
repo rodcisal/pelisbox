@@ -19,10 +19,12 @@ img#imagenes
 
 ul#pelicula {
 	list-style-type:none;
-	width: 210px;
+	width: 150px;
+	height: 352px;
 	background: #464368;
 	color: white;
 	li h3 a { color:white; text-align:center;}
+
 }
 
 
@@ -30,12 +32,17 @@ ul#pelicula {
 	list-style-type:none;
 	border: 1px solid;
 	width: 738px;
-	background: #2479A2;
+	background: #8B8B8B;
 }
 
 #pelisbox {
 	font-family: 'Condiment', cursive;
 	color:white;
-	font-size: 50px;
+	font-size: 70px;
 	margin-left: 40px;
+	margin-top: 80px;
+}
+
+#top {
+	display:inline-table;
 }
