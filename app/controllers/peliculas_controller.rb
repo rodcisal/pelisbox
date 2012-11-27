@@ -36,6 +36,7 @@ class PeliculasController < ApplicationController
   def new
     @pelicula = Pelicula.new
 
+
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @pelicula }
@@ -51,6 +52,7 @@ class PeliculasController < ApplicationController
   # POST /peliculas.json
   def create
     @pelicula = Pelicula.new(params[:pelicula])
+    @pelicula.uploader_id = current_uploader.id 
 
     respond_to do |format|
       if @pelicula.save

@@ -2,7 +2,6 @@
   <div class="span4 offset4">
     <% if uploader_signed_in? %>
       Logged in as <strong><%= current_uploader.email %></strong>.
-      <%= link_to 'Edit profile', edit_uploader_registration_path %> |
       <%= link_to "Logout", destroy_uploader_session_path, method: :delete %>
     <% else %>
       <%= link_to "R", new_uploader_registration_path %> |
