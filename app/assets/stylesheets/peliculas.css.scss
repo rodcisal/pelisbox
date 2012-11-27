@@ -150,13 +150,13 @@ div.payload { padding-top: 80px; }
 }
 .view-first:hover h2,
 .view-first:hover p,
-.view-first:hover a.info {
+.view-first:hover a {
     opacity: 1;
     transform: translateY(0px);
 }
 .view-first:hover p {
     transition-delay: 0.1s;
 }
-.view-first:hover a.info {
+.view-first:hover a{
     transition-delay: 0.2s;
 }
