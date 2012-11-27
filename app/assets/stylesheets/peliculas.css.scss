@@ -19,7 +19,7 @@ img#imagenes
 
 ul#pelicula {
 	list-style-type:none;
-	width: 150px;
+	width: 170px;
 	height: 313px;
 	background: #464368;
 	color: white;
@@ -56,6 +56,8 @@ h1#show{
 }
 
 div.payload { padding-top: 80px; }
-div.payload { padding-top: 80px; }
 
-#descripcion { color:white;}
+
+#imagen {
+	text-align:center;
+}
