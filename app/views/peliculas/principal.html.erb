@@ -6,7 +6,7 @@
     <% @peliculas.each do |pelicula| %>
       <div id="top">
         <ul id="pelicula">
-          <li><h3><%= link_to "#{pelicula.titulo}", pelicula_path(pelicula) %></h3></li>
+          <li><p><%= link_to "#{pelicula.titulo}", pelicula_path(pelicula) %></p></li>
           <li ><%= raw pelicula.imagen %></li>
         </ul>
       </div>

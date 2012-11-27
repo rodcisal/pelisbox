@@ -20,10 +20,14 @@ img#imagenes
 ul#pelicula {
 	list-style-type:none;
 	width: 150px;
-	height: 352px;
+	height: 313px;
 	background: #464368;
 	color: white;
 	li h3 a { color:white; text-align:center;}
+	li p {
+		padding-top:15px; text-align:center;
+		a { color:white; font-size:20px; padding-top:10px;}
+	}
 
 }
 
@@ -46,3 +50,12 @@ ul#pelicula {
 #top {
 	display:inline-table;
 }
+
+h1#show{
+	color:white;
+}
+
+div.payload { padding-top: 80px; }
+div.payload { padding-top: 80px; }
+
+#descripcion { color:white;}

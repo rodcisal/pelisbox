@@ -1,14 +1,20 @@
 <%- model_class = Pelicula -%>
 <div class="page-header">
-  <h1><strong><%= @pelicula.titulo %></strong></h1>
+  <h1 id="show"><strong><%= @pelicula.titulo %></strong></h1>
+</div>
+
+<div class="span8" id="descripcion">
+  <h4><%= @pelicula.descripcion %></h4>
 </div>
 
 <div class="payload">
   <ul class="items">
-    <li><%= @pelicula.descripcion %></li>
     <li><%= raw @pelicula.iframe %></li>
-    <%= link_to "Inicio", root_path %>
   </ul>
+</div>
+
+<div class="downbar">
+  <h2><%= link_to "Inicio", root_path %></h2>
 </div>
 
 
