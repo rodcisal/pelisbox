@@ -34,7 +34,8 @@ class PeliculasController < ApplicationController
   # GET /peliculas/new
   # GET /peliculas/new.json
   def new
-    @pelicula = Pelicula.new
+    @pelicula = Pelicula.new(uploader_id: current_uploader.id)
+    @cuantas = Pelicula.where(uploader_id: 'current_uploader.id').count()
 
 
     respond_to do |format|
@@ -53,6 +54,7 @@ class PeliculasController < ApplicationController
   def create
     @pelicula = Pelicula.new(params[:pelicula])
     @pelicula.uploader_id = current_uploader.id 
+
 
     respond_to do |format|
       if @pelicula.save
