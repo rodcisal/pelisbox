@@ -1,5 +1,5 @@
-class AddUploaderIdToPelicula < ActiveRecord::Migration
+class AddUploaderIdToPeliculas < ActiveRecord::Migration
   def change
-  	add_column :pelicula, :uploader_id, :string 
+  	add_column :peliculas, :uploader_id, :string 
   end
 end
