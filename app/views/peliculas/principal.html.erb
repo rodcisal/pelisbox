@@ -4,11 +4,13 @@
 </div>
 <div class="container">
     <% @peliculas.each do |pelicula| %>
-      <div id="top">
-        <ul id="pelicula">
-          <li><p><%= link_to "#{pelicula.titulo}", pelicula_path(pelicula) %></p></li>
-          <li id="imagen"><%= raw pelicula.imagen %></li>
-        </ul>
+      <div class="view view-first">
+          <%= raw pelicula.imagen %>
+          <div class="mask">
+	          <h2><%= pelicula.titulo %></h2>
+	          <p><%= pelicula.descripcion %></p>
+	        </div>
       </div>
       <% end %>
 </div>
+
