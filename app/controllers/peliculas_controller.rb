@@ -4,11 +4,12 @@ class PeliculasController < ApplicationController
   # GET /peliculas.json
   def index
     @peliculas = Pelicula.all
+    @pelicula = Pelicula.order(:titulo)
 
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @peliculas }
-      format.csv { send_data @peliculas.to_csv }
+      format.csv { send_data @pelicula.to_csv }
     end
   end
 
