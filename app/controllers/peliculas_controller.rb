@@ -8,6 +8,7 @@ class PeliculasController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @peliculas }
+      format.csv { send_data @peliculas.to_csv }
     end
   end
 
