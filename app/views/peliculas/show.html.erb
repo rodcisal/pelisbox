@@ -1,20 +1,19 @@
 <%- model_class = Pelicula -%>
-<div class="page-header">
-  <h1 id="show"><strong><%= @pelicula.titulo %></strong></h1>
-</div>
 
-<div class="span8" id="descripcion">
-  <h4><%= @pelicula.descripcion %></h4>
-</div>
 
-<div class="payload">
-  <ul class="items">
-    <li><%= raw @pelicula.iframe %></li>
-  </ul>
+<div class="row">
+	<div class="span8">
+		<div class="iframe"><%= raw @pelicula.iframe %></div>
+	</div>
+	<div class="span4" style="text-align:center;">
+		<h1 style="color:white;"><%= @pelicula.titulo %></h1>
+		 <p style="color:white;"><%= @pelicula.descripcion %></p>
+	</div>
 </div>
-
-<div class="span4 offset1">
-  <h2><%= link_to "Inicio", root_path %></h2>
+<div class="row">
+	<div class="span4">
+	  <h2><%= link_to "Inicio", root_path %></h2>
+	</div>
 </div>
 
 
