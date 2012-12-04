@@ -1,6 +1,7 @@
 <%- model_class = Pelicula -%>
 
 <div class="container" id="principal">
+		<h3 id="ultimas"> Ultimas Agregadas: </h3>
     <% @peliculas.each do |pelicula| %>
       <div class="view view-first">
           <%= raw pelicula.imagen %>

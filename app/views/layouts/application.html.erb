@@ -34,17 +34,32 @@
 
 </script>
 <div class="container">
-	<div class="row">
-    <div class="span4 offset1">
-      <div class="logo">
-        <img src="http://imagenes.todoonline.tv/pelisboxlogo.png" />
+  	<div class="row">
+      
+
+      <div class="span4">
+        <div class="logo">
+          <img src="http://imagenes.todoonline.tv/pelisboxlogo.png" />
+        </div>
       </div>
+      
+      <div class="span8" id="barra">
+        <nav>
+          <ul class="fancyNav">
+            <li id="home"><%= link_to 'Estrenos', root_path %></li>
+            <li id="home"><%= link_to 'Clásicos', root_path %></li>
+            <li id="home"><%= link_to 'Documentales', root_path %></li>
+            <li id="home"><%= link_to 'Series', root_path %></li>
+          </ul>
+        </nav>
+      </div>
+    
     </div>
-  </div>
+
+
 <%= yield %>
 </div>
-<div class="container">
-	<h3 style="color:white;">contacto: contacto@pelisbox.net </h3>
-</div>
+
+
 </body>
 </html>
