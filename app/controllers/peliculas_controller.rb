@@ -22,6 +22,15 @@ class PeliculasController < ApplicationController
     end
   end
 
+  def principal2
+    @peliculas = Pelicula.all
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @peliculas }
+    end
+  end
+
   # GET /peliculas/1
   # GET /peliculas/1.json
   def show

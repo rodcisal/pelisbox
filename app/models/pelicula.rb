@@ -13,4 +13,5 @@ class Pelicula < ActiveRecord::Base
   		end
   	end
   end
+  
 end
