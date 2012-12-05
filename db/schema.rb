@@ -11,12 +11,12 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121127182611) do
+ActiveRecord::Schema.define(:version => 20121204185930) do
 
   create_table "peliculas", :force => true do |t|
     t.string   "titulo"
     t.string   "descripcion"
-    t.string   "iframe"
+    t.text     "iframe"
     t.string   "imagen"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false

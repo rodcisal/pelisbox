@@ -5,9 +5,9 @@
 
 
 body {
-	background: #1B1B24;
+	background:black;
 	color: #7A7A8A;
-	font-family: "proxima-nova", "helvetica neue", helvetica, arial, geneva, sans-serif;
+	font-family:'Open Sans', sans-serif;
 }
 
 img#imagenes 
@@ -79,7 +79,7 @@ img.imagenes {
 }
 
 .view {
-    width: 170px;
+    width: 166px;
     height: 250px;
     margin: 10px;
     float: left;
@@ -139,7 +139,7 @@ img.imagenes {
 }
 .view-first .mask {
     opacity: 0;
-    background-color: #F0EFD1; 
+    background-color: #DBDBDB; 
     transition: all 0.4s ease-in-out;
 }
 .view-first h2 {
@@ -354,4 +354,7 @@ img.imagenes {
 #ultimas {
     margin-left: 10px;
     color:white;
+}
+#estreno_iframe {
+    padding-top: 100px;
 }

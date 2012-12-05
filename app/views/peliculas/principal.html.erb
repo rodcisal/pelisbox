@@ -1,7 +1,8 @@
 <%- model_class = Pelicula -%>
 
-<div class="container" id="principal">
-		<h3 id="ultimas"> Ultimas Agregadas: </h3>
+<div class="row" id="principal">
+	<div class="span8">
+		<h3 id="ultimas"> Últimas Agregadas </h3>
     <% @peliculas.each do |pelicula| %>
       <div class="view view-first">
           <%= raw pelicula.imagen %>
@@ -10,5 +11,20 @@
 	        </div>
       </div>
       <% end %>
+  </div>
+
+
+  <div class="span4" id="estrenos">
+  	<div class="row" id="estreno">
+  		<h2 id="ultimas"> Estreno Recomendado </h2>
+  		<div class="span4">
+  			<h1>natalie lamour </h1>
+  			<img src="http://imagenes.todoonline.tv/perro.jpg" />
+  		</div>
+  		
+
+  		<p> hasihiajdijaafdafafadfad afd adfaf fafdafadfadfadfa adfadfadfadfa fafdadfadfadf gefa fafadf af afafadfad fad </p>
+  	</div>
+  </div>
 </div>
 
