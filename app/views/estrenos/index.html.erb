@@ -1,0 +1,37 @@
+<h1>Listing estrenos</h1>
+
+<table>
+  <tr>
+    <th>Titulo</th>
+    <th>Descripcion</th>
+    <th>Nota</th>
+    <th>Categoria</th>
+    <th>Iframe</th>
+    <th>Opcion1</th>
+    <th>Opcion2</th>
+    <th>Imagen</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @estrenos.each do |estreno| %>
+  <tr>
+    <td><%= estreno.titulo %></td>
+    <td><%= estreno.descripcion %></td>
+    <td><%= estreno.nota %></td>
+    <td><%= estreno.categoria %></td>
+    <td><%= estreno.iframe %></td>
+    <td><%= estreno.opcion1 %></td>
+    <td><%= estreno.opcion2 %></td>
+    <td><%= estreno.imagen %></td>
+    <td><%= link_to 'Show', estreno %></td>
+    <td><%= link_to 'Edit', edit_estreno_path(estreno) %></td>
+    <td><%= link_to 'Destroy', estreno, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Estreno', new_estreno_path %>
