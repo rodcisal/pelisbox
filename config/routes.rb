@@ -1,4 +1,6 @@
 Pelisbox::Application.routes.draw do
+  resources :estrenos
+
   devise_for :uploaders
 
   resources :peliculas

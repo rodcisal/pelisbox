@@ -18,12 +18,12 @@
   	<div class="row" id="estreno">
   		<h2 id="ultimas"> Estreno Recomendado </h2>
   		<div class="span4">
-  			<h1>natalie lamour </h1>
-  			<img src="http://imagenes.todoonline.tv/perro.jpg" />
+  			<h1><%= link_to "#{@estreno.titulo}", estreno_path(@estreno) %></h1>
+  			<img src="<%= raw @estreno.imagen %>">
   		</div>
-  		
-
-  		<p> hasihiajdijaafdafafadfad afd adfaf fafdafadfadfadfa adfadfadfadfa fafdadfadfadf gefa fafadf af afafadfad fad </p>
+  		<div class="span4">
+  			<div id="descripcion_estreno"><%= @estreno.descripcion %></div>
+  		</div>
   	</div>
   </div>
 </div>

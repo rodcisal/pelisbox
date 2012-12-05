@@ -15,6 +15,7 @@ class PeliculasController < ApplicationController
 
   def principal
     @peliculas = Pelicula.all
+    @estreno = Estreno.first
 
     respond_to do |format|
       format.html # index.html.erb
