@@ -355,8 +355,10 @@ img.imagenes {
     margin-left: 10px;
     color:white;
 }
-#estreno_iframe {
-    padding-top: 100px;
+
+div#estreno_iframe.span8 {
+    background: #F1F1F1;
+    border-radius: 5px;
 }
 
 
@@ -370,10 +372,12 @@ h3#ultimas {
     color:black;
     width: 734px;
     padding-left:10px;
+    border-radius: 8px;
 }
 
 h2#ultimas {
     background: #F1F1F1;
     color:black;
     padding-left: 10px;
+    border-radius: 8px;
 }
