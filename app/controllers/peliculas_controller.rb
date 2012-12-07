@@ -13,7 +13,7 @@ class PeliculasController < ApplicationController
   end
 
   def principal
-    @peliculas = Pelicula.page(params[:page]).per(8)
+    @peliculas = Pelicula.page(params[:page]).per(12)
     @estreno = Estreno.first
 
     respond_to do |format|
