@@ -4,7 +4,6 @@ class PeliculasController < ApplicationController
   # GET /peliculas.json
   def index
     @peliculas = Pelicula.all
-    @pelicula = Pelicula.order(:titulo)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -14,7 +13,7 @@ class PeliculasController < ApplicationController
   end
 
   def principal
-    @peliculas = Pelicula.all
+    @peliculas = Pelicula.page(params[:page]).per(8)
     @estreno = Estreno.first
 
     respond_to do |format|

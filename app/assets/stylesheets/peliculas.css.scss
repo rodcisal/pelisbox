@@ -139,7 +139,6 @@ img.imagenes {
 }
 .view-first .mask {
     opacity: 0;
-    background-color: #DBDBDB; 
     transition: all 0.4s ease-in-out;
 }
 .view-first h2 {
@@ -380,4 +379,8 @@ h2#ultimas {
     color:black;
     padding-left: 10px;
     border-radius: 8px;
+}
+
+nav.pagination {
+    text-align:center;
 }
