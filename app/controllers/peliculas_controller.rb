@@ -13,8 +13,8 @@ class PeliculasController < ApplicationController
   end
 
   def principal
-    @peliculas = Pelicula.text_search(params[:query]).page(params[:page]).per(12)
-    @estrenos = Estreno.all
+    @peliculas = Pelicula.page(params[:page]).per(12)
+    @estrenos = Estreno.all(:order => "created_at DESC")
 
     respond_to do |format|
       format.html # index.html.erb

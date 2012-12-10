@@ -3,7 +3,7 @@
 <div class="row" id="principal">
 	<div class="span8">
 		<h3 id="ultimas"> Últimas Agregadas </h3>
-    <% @peliculas.each do |pelicula| %>
+    <% @peliculas.order("created_at DESC").each do |pelicula| %>
       <div class="view view-first">
           <%= raw pelicula.imagen %>
           <div class="mask">
