@@ -13,7 +13,7 @@ class PeliculasController < ApplicationController
   end
 
   def principal
-    @peliculas = Pelicula.page(params[:page]).per(12)
+    @peliculas = Pelicula.text_search(params[:query]).page(params[:page]).per(12)
     @estrenos = Estreno.all
 
     respond_to do |format|

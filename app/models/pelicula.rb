@@ -4,7 +4,7 @@ class Pelicula < ActiveRecord::Base
   attr_accessible :descripcion, :iframe, :imagen, :titulo, :uploader_id
   friendly_id :titulo
 
-
+#Metodo para exportar a CSV
   def self.to_csv 
   	CSV.generate do |csv|
   		csv << column_names
@@ -13,5 +13,13 @@ class Pelicula < ActiveRecord::Base
   		end
   	end
   end
+
+def self.text_search(query)
+  if query.present?
+    where("titulo @@ :q", q: "%#{query}%")
+  else
+    scoped
+  end
+end
   
 end
