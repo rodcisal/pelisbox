@@ -356,7 +356,7 @@ img.imagenes {
 }
 
 div#estreno_iframe.span8 {
-    background: #F1F1F1;
+
     border-radius: 5px;
 }
 
@@ -391,10 +391,7 @@ nav.pagination a {
     text-decoration:underline;
 }
 
-div.carousel-inner {
-    height: 266px;
-}
 
-div.item.active img {
-    height: 266px;
+#show {
+    margin-top: 50px;
 }
