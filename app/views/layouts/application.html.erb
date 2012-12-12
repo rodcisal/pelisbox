@@ -56,6 +56,29 @@
 </div>
 
 
+<div class="container" id="footer">
+  <div class="row">
+
+    <div class="span3" id="footer_uno">
+      <h4><%= link_to 'PELISBOX 2012', root_path %></h4>
+    </div>
+
+    <div class="span3" id="footer_dos">
+      <h3> Últimas peliculas </h3>
+      <ul>
+        <% footers.each do |f| %>
+        <li><%= link_to "#{f.titulo}", pelicula_path(footers) %></li>
+        <% end %>
+      </ul>
+    </div>
+
+    <div class="span3" id="footer_tres">
+      <h3> Contacto </h3>
+      
+
+  </div>
+
+</div>
 
 </body>
 </html>
