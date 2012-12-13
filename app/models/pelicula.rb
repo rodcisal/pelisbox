@@ -1,7 +1,7 @@
 class Pelicula < ActiveRecord::Base
 	extend FriendlyId
 	belongs_to :uploader
-  attr_accessible :descripcion, :iframe, :imagen, :titulo, :uploader_id
+  attr_accessible :descripcion, :iframe, :imagen, :titulo, :uploader_id, :trailer
   friendly_id :titulo
 
 #Metodo para exportar a CSV

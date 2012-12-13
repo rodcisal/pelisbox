@@ -2,12 +2,15 @@
 
 
 <div class="row" id="show">
-	<div class="span7" id="estreno_iframe">
-		<div class="iframe"><%= raw @pelicula.iframe %></div>
+	<div class="span8" id="estreno_iframe">
+		<div class="iframe" style="text-align:center;"><%= raw @pelicula.iframe %></div>
 	</div>
 	<div class="span4" id="desc"style="text-align:center;">
 		<h1><%= @pelicula.titulo %></h1>
 		 <p style="color:black;"><%= @pelicula.descripcion %></p>
+		</br>
+		<h1 style="color: #19A206;">Trailer </h1>
+		<%= raw @pelicula.trailer %>
 	</div>
 </div>
 <div class="row">
