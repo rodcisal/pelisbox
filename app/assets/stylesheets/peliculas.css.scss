@@ -53,8 +53,8 @@ ul#pelicula {
 
 #principal { margin-top:50px;}
 
-h1#show{
-	color:white;
+h1#show, p#show{
+	color: black;
 }
 
 div.payload { padding-top: 160px; }
@@ -404,3 +404,28 @@ div#footer.container {
 div#footer_dos.span3 ul {
     list-style-type:none;
 }
+
+div#footer_dos.span3 h3 {
+    padding-left: 20px;
+}
+
+div#desc.span4 {
+    background: #F1F1F1;
+
+}
+
+div#desc.span4  h1 {
+    color: #D5892A;
+    border-left-style: solid;
+        border-left-width: 9px;
+}
+
+div#desc.span4 p {
+    color: black;
+        padding-left: 20px;
+        padding-right: 20px;
+        line-height: 20px;
+        
+}
+
+
