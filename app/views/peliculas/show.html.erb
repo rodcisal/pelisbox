@@ -10,7 +10,7 @@
 		 <p style="color:black;"><%= @pelicula.descripcion %></p>
 		</br>
 		<h1 style="color: #19A206;">Trailer </h1>
-		<%= raw @pelicula.trailer %>
+		<iframe width="360" height="200" src="<%= raw @pelicula.trailer %>" frameborder="0" allowfullscreen></iframe>
 	</div>
 </div>
 <div class="row">
@@ -18,5 +18,4 @@
 	  
 	</div>
 </div>
-
 
