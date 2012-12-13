@@ -10,11 +10,12 @@
 		 <p style="color:black;"><%= @pelicula.descripcion %></p>
 		</br>
 		<h1 style="color: #19A206;">Trailer </h1>
-		<iframe width="360" height="200" src="<%= raw @pelicula.trailer %>" frameborder="0" allowfullscreen></iframe>
+		<iframe width="360" height="200" src="http://www.youtube.com/embed/<%= raw @pelicula.trailer %>" frameborder="0" allowfullscreen></iframe>
 	</div>
 </div>
 <div class="row">
-	<div class="span4">
+	<div class="span8">
+		<div class="fb-comments" data-href="http://pelisbox.net/peliculas/<%= @pelicula.id %>" data-width="770" data-num-posts="10"></div>
 	  
 	</div>
 </div>
